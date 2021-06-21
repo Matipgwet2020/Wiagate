@@ -1,22 +1,22 @@
 import React from 'react'
 import {
-  CBadge,
+  //CBadge,
   CDropdown,
-  CDropdownItem,
+  /*CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
-  CProgress
+  CProgress*/
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
 const TheHeaderDropdownNotif = () => {
-  const itemsCount = 5
+  //const itemsCount = 5
   return (
     <CDropdown
       inNav
       className="c-header-nav-item mx-2"
     >
-      <CDropdownToggle className="c-header-nav-link" caret={false}>
+      {/* <CDropdownToggle className="c-header-nav-link" caret={false}>
         <CIcon name="cil-bell"/>
         <CBadge shape="pill" color="danger">{itemsCount}</CBadge>
       </CDropdownToggle>
@@ -62,7 +62,7 @@ const TheHeaderDropdownNotif = () => {
           <CProgress size="xs" color="danger" value={90} />
           <small className="text-muted">243GB/256GB</small>
         </CDropdownItem>
-      </CDropdownMenu>
+      </CDropdownMenu> */}
     </CDropdown>
   )
 }

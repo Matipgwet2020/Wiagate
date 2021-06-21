@@ -37,6 +37,9 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
+const Profil = React.lazy(() => import('./views/user/profil/Profil'));
+const MyServices = React.lazy(() => import('./views/user/services/my_services'));
+const All_Services = React.lazy(() => import('./views/services/all_services'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -78,7 +81,13 @@ const routes = [
   { path: '/notifications/toaster', name: 'Toaster', component: Toaster },
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/users', exact: true,  name: 'Users', component: Users },
-  { path: '/users/:id', exact: true, name: 'User Details', component: User }
+  { path: '/users/:id', exact: true, name: 'User Details', component: User },
+
+  { path: '/user/profil', name: 'Mon Profil', component: Profil },
+  { path: '/user/services', name: 'Mes services', component: MyServices },
+  { path: '/services', name: 'Tous les services', component: All_Services }
+  /*{ path: '/user', name: 'Mon Profil', component: Profil, exact:true },
+  { path: '/user/profil', name: 'Profil', component: Profil }*/
 ];
 
 export default routes;
