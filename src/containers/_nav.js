@@ -7,11 +7,48 @@ const _nav =  [
     name: 'Dashboard',
     to: '/dashboard',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    }
   },
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['User']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Mon Profil',
+    to: '/user/profil',
+    icon: 'cil-drop',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Mes services',
+    to: '/user/services',
+    icon: 'cil-drop',
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Mes Services',
+    route: '/services',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Tous mes Services',
+        to: '/service/service_1',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Service_2',
+        to: '/service/service_2',
+      },
+    ],
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Ma Consommation',
+    to: '/consommation',
+    icon: 'cil-calculator',
+  },
+  //ici
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Theme']
@@ -306,7 +343,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDivider',
     className: 'm-2'
-  }
+  }//ici
 ]
 
 export default _nav

@@ -14,3 +14,39 @@ button {
     margin-top: 0 !important;
   }
 }
+.ccol{
+  padding:0px !important;
+  //margin: 0px !important;
+  }
+
+  .ccol .card-body{
+    padding:2px !important;
+    //margin: 2px !important;
+    //height: 50% !important;
+  }
+
+.redim {
+  width: 100%;
+  height: 50%;
+  //align-content: center;
+  /*padding-top: "100px";
+  margin-top: "100px";   
+  zoom: 40%;*/
+}
+
+.service {
+
+  margin-top: 10 !important;
+  
+
+}
+
+@media  screen and (max-width:450px) {
+
+  .smallh2{
+    zoom:0.5;
+  }
+  
+}
+
+

@@ -7,14 +7,21 @@ import {
   CHeaderNav,
   CHeaderNavItem,
   CHeaderNavLink,
-  CSubheader,
+  CButton,
+  CDropdown,
+  CDropdownMenu,
+  CDropdownItem,
+  CForm,
+  CInput
+
+  /*CSubheader,
   CBreadcrumbRouter,
-  CLink
+  CLink*/
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
 // routes config
-import routes from '../routes'
+//import routes from '../routes'
 
 import { 
   TheHeaderDropdown,
@@ -53,7 +60,11 @@ const TheHeader = () => {
         <CIcon name="logo" height="48" alt="Logo"/>
       </CHeaderBrand>
 
-      <CHeaderNav className="d-md-down-none mr-auto">
+      <CHeaderNav className="px-3">
+        <div>Bienvenue sur Wiagate</div>
+      </CHeaderNav>
+
+       <CHeaderNav className="d-md-down-none mr-auto">
         <CHeaderNavItem className="px-3" >
           <CHeaderNavLink to="/dashboard">Dashboard</CHeaderNavLink>
         </CHeaderNavItem>
@@ -63,16 +74,36 @@ const TheHeader = () => {
         <CHeaderNavItem className="px-3">
           <CHeaderNavLink>Settings</CHeaderNavLink>
         </CHeaderNavItem>
-      </CHeaderNav>
+      </CHeaderNav>  
+      <CForm inline>
+          <CInput
+            className="mr-sm-2"
+            placeholder="Search"
+            size="sm"
+          />
+          <CButton color="light" className="my-2 my-sm-0" type="submit">Search</CButton>
+      </CForm>
+      <CDropdown
+        inNav
+      >
+        <CDropdownMenu>
+          <CDropdownItem>EN</CDropdownItem>
+          <CDropdownItem>ES</CDropdownItem>
+          <CDropdownItem>RU</CDropdownItem>
+          <CDropdownItem>FA</CDropdownItem>
+        </CDropdownMenu>
+      </CDropdown>
 
-      <CHeaderNav className="px-3">
+
+       <CHeaderNav className="px-3">
         <TheHeaderDropdownNotif/>
         <TheHeaderDropdownTasks/>
         <TheHeaderDropdownMssg/>
         <TheHeaderDropdown/>
-      </CHeaderNav>
+      </CHeaderNav> 
+      
 
-      <CSubheader className="px-3 justify-content-between">
+       {/* <CSubheader className="px-3 justify-content-between">
         <CBreadcrumbRouter 
           className="border-0 c-subheader-nav m-0 px-0 px-md-3" 
           routes={routes} 
@@ -92,7 +123,7 @@ const TheHeader = () => {
               <CIcon name="cil-settings" alt="Settings" />&nbsp;Settings
             </CLink>
           </div>
-      </CSubheader>
+      </CSubheader>  */}
     </CHeader>
   )
 }
