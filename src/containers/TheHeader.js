@@ -54,7 +54,7 @@ const TheHeader = () => {
       </CHeaderBrand>
 
       <CHeaderNav className="px-3">
-        <div>Bienvenue sur Wiagate</div>
+        <div>Vous êtes sur Wiagate</div>
       </CHeaderNav>
 
        <CHeaderNav className="d-md-down-none mr-auto">

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {Component} from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import {
   CButton,
   CCard,
@@ -16,7 +16,63 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-const Login = () => {
+function useQuery() {
+  return new URLSearchParams(useLocation().search)
+}
+
+export default class Login extends Component {
+
+  state = {
+    username: "",
+    password: "",
+    redirect: false,
+    url: '',
+  }
+
+  handleSubmit = () => {
+      console.log(this.state)
+      fetch('http://192.168.1.201:8000/login/', {
+        method: "POST",
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          "username": this.state.username,
+          "password": this.state.password,
+        })
+      })
+      .then((response) => response.json())
+      .then((response) => {
+        let query = new URLSearchParams(this.props.location.search)
+        let authaction = query.get("authaction")
+        let clientip = query.get("clientip")
+        let gatewayname = query.get("gatewayname")
+        let tok = query.get("tok")
+        let redir = query.get("redir")
+        console.log(query)
+        console.log(authaction)
+        console.log(tok)
+
+        let  failure = true
+        if (response.status === "success") {
+          failure = false
+        }
+
+        if (!failure) {
+           let url = authaction
+           url += "?tok=" + tok
+           url += "?redir=" + redir
+           console.log(url)
+           // alert(url)
+           window.location.href = url
+        }
+        else {
+          alert('User not authenticated!')
+        }
+      })
+  }
+
+render() {
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
       <CContainer>
@@ -34,7 +90,7 @@ const Login = () => {
                           <CIcon name="cil-user" />
                         </CInputGroupText>
                       </CInputGroupPrepend>
-                      <CInput type="text" placeholder="Username" autoComplete="username" />
+                      <CInput type="text" placeholder="Username" autoComplete="username" value={this.state.username} onChange={(e) => {this.setState({username: e.target.value})}} />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupPrepend>
@@ -42,11 +98,11 @@ const Login = () => {
                           <CIcon name="cil-lock-locked" />
                         </CInputGroupText>
                       </CInputGroupPrepend>
-                      <CInput type="password" placeholder="Password" autoComplete="current-password" />
+                      <CInput type="password" placeholder="Password" autoComplete="current-password" value={this.state.password} onChange={(e) => {this.setState({password: e.target.value})}}/>
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
-                        <CButton color="primary" className="px-4">Login</CButton>
+                        <CButton color="primary" className="px-4" onClick={this.handleSubmit}>Login</CButton>
                       </CCol>
                       <CCol xs="6" className="text-right">
                         <CButton color="link" className="px-0">Forgot password?</CButton>
@@ -74,5 +130,4 @@ const Login = () => {
     </div>
   )
 }
-
-export default Login
+}
