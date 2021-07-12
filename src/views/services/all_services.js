@@ -79,7 +79,7 @@ const WidgetsDropdown = () => {
           className="my-4"
         />
           <CDropdown>
-            <CDropdownToggle caret={false}  color="transparent">
+            <CDropdownToggle  to="/user/wiatalk" caret={false}  color="transparent">
               <CIcon name="cib-addthis" height="52" className="my+1"/>
             </CDropdownToggle>
             <CDropdownMenu className="pt-0" placement="bottom-end">
@@ -411,7 +411,7 @@ const WidgetsDropdown = () => {
             align="center"
             addListClass="some-class"
             activePage={currentPage}
-            pages={10}
+            pages={1}
             onActivePageChange={setCurrentPage}
           />
       </CCol>

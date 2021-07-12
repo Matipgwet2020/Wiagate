@@ -14,32 +14,32 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Mon Profil',
+    name: 'Profil',
     to: '/user/profil',
     icon: 'cil-drop',
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Mes services',
+    name: 'Sign In services',
     to: '/user/services',
-    icon: 'cil-drop',
+    icon: 'cil-puzzle',
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Mes Services',
-    route: '/services',
-    icon: 'cil-puzzle',
+    name: 'My Services',
+    route: '/service',
+    icon: 'cil-pencil',
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'Tous mes Services',
-        to: '/service/service_1',
+        name: 'All my Services',
+        to: '/service/all_my_services',
       },
-      {
+     /*  {
         _tag: 'CSidebarNavItem',
         name: 'Service_2',
         to: '/service/service_2',
-      },
+      }, */
     ],
   },
   {
@@ -49,7 +49,7 @@ const _nav =  [
     icon: 'cil-calculator',
   },
   //ici
-  {
+ /*  {
     _tag: 'CSidebarNavTitle',
     _children: ['Theme']
   },
@@ -58,7 +58,7 @@ const _nav =  [
     name: 'Colors',
     to: '/theme/colors',
     icon: 'cil-drop',
-  },
+  }, 
   {
     _tag: 'CSidebarNavItem',
     name: 'Typography',
@@ -157,7 +157,7 @@ const _nav =  [
       },
     ],
   },
-  {
+   {
     _tag: 'CSidebarNavDropdown',
     name: 'Buttons',
     route: '/buttons',
@@ -262,7 +262,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Extras'],
-  },
+  },*/
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Pages',
@@ -279,7 +279,7 @@ const _nav =  [
         name: 'Register',
         to: '/register',
       },
-      {
+      /* {
         _tag: 'CSidebarNavItem',
         name: 'Error 404',
         to: '/404',
@@ -288,10 +288,10 @@ const _nav =  [
         _tag: 'CSidebarNavItem',
         name: 'Error 500',
         to: '/500',
-      },
+      }, */
     ],
   },
-  {
+  /*{
     _tag: 'CSidebarNavItem',
     name: 'Disabled',
     icon: 'cil-ban',
@@ -343,7 +343,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDivider',
     className: 'm-2'
-  }//ici
+  }*/
 ]
 
 export default _nav

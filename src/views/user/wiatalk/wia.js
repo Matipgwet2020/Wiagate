@@ -16,29 +16,18 @@ import {
   CInput,
   CInputRadio,
   CLabel,
-  CSelect,
   CRow,
-  CSwitch,
   CJumbotron,
-  CWidgetDropdown
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-import picture from "../../../images/avion.jpg"
+import picture from "../../../images/wiatalk.jpg"
 import "../../../styles/profil.css"
 import { DocsLink } from 'src/reusable'
 
-const BasicForms = () => {
-  const [collapsed, setCollapsed] = React.useState(true)
-  const [showElements, setShowElements] = React.useState(true)
-  const [modal, setModal] = useState(true)
+const Wiatalk = () => {
   const [large, setLarge] = useState(false)
-  const [small, setSmall] = useState(false)
-  const [primary, setPrimary] = useState(false)
-  const [success, setSuccess] = useState(false)
-  const [warning, setWarning] = useState(false)
-  const [danger, setDanger] = useState(false)
-  const [info, setInfo] = useState(false)
+ 
 
   return (
     <>
@@ -46,27 +35,6 @@ const BasicForms = () => {
       <CRow >
 
       <CCol xs="12" sm="5">
-        {/* <CWidgetDropdown
-          color="gradient-primary"
-          text="Tickets Plane" 
-          >
-
-        <CIcon
-          name="cib-cc-visa"
-          height="52"
-          className="my-4"
-        />
-        <CDropdown>
-          <CDropdownToggle to="/base/forms" caret={false}  color="transparent">
-            <CIcon name="cib-addthis" height="52" className="my+1"/>
-            </CDropdownToggle>
-                {/* <CDropdownMenu to="/base/forms"  className="pt-0" placement="bottom-end">
-                  <CDropdownItem >
-                    Sign In
-                  </CDropdownItem>
-                </CDropdownMenu> *
-              </CDropdown>
-            </CWidgetDropdown> */}
              <img
                 alt="example"
                 class="img-fluid rounded"
@@ -81,11 +49,10 @@ const BasicForms = () => {
             </CCardHeader>
             <CCardBody lg="3">
               <CJumbotron className="border">
-                <h1 className="display-6">Ticket plan</h1>
-                <p className="lead">This is a simple hero unit, a simple Jumbotron - style component for calling extra
-                  attention to featured content or information.</p>
+                <h1 className="display-6">WiaTalk</h1>
+                <p className="lead">TService as a messagerie</p>
                 <hr className="my-2" />
-                <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
+                <p>It uses of communication enter many persons</p>
                 <p className="lead">
                   <CButton color="primary" size="lg">Learn More</CButton>
                 </p>
@@ -208,7 +175,7 @@ const BasicForms = () => {
               size="lg"
             >
               <CModalHeader closeButton>
-                <CModalTitle>Confirm to subsribe</CModalTitle>
+                <CModalTitle>Confirmation de la souscription</CModalTitle>
               </CModalHeader>
               <CModalBody>
               You will subscribe to this service via this package !!
@@ -224,4 +191,4 @@ const BasicForms = () => {
   )
 }
 
-export default BasicForms
+export default Wiatalk

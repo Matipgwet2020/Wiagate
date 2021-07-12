@@ -28,7 +28,7 @@ const Dashboard = () => {
           <CRow>
             <CCol sm="5">
               <h4 id="traffic" className="card-title mb-0">Traffic</h4>
-              <div className="small text-muted">November 2017</div>
+              <div className="small text-muted">Juin 2021</div>
             </CCol>
             <CCol sm="7" className="d-none d-md-block">
               <CButton color="primary" className="float-right">
@@ -69,9 +69,9 @@ const Dashboard = () => {
               <strong>24.093 Users (20%)</strong>
               <CProgress
                 className="progress-xs mt-2"
-                precision={1}
+                precision={4}
                 color="info"
-                value={40}
+                value={50}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
@@ -79,9 +79,9 @@ const Dashboard = () => {
               <strong>78.706 Views (60%)</strong>
               <CProgress
                 className="progress-xs mt-2"
-                precision={1}
+                precision={10}
                 color="warning"
-                value={40}
+                value={70}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
@@ -89,9 +89,9 @@ const Dashboard = () => {
               <strong>22.123 Users (80%)</strong>
               <CProgress
                 className="progress-xs mt-2"
-                precision={1}
+                precision={25}
                 color="danger"
-                value={40}
+                value={150}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
@@ -99,8 +99,8 @@ const Dashboard = () => {
               <strong>Average Rate (40.15%)</strong>
               <CProgress
                 className="progress-xs mt-2"
-                precision={1}
-                value={40}
+                precision={3}
+                value={20}
               />
             </CCol>
           </CRow>
@@ -340,13 +340,13 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>Yiorgos Avraamu</div>
+                      <div>MATIP Marcele</div>
                       <div className="small text-muted">
-                        <span>New</span> | Registered: Jan 1, 2015
+                        <span>New</span> | Registered: Feb 22, 2021
                       </div>
                     </td>
                     <td className="text-center">
-                      <CIcon height={25} name="cif-us" title="us" id="us" />
+                      <CIcon height={25} name="cif-br" title="us" id="us" />
                     </td>
                     <td>
                       <div className="clearfix">
@@ -354,7 +354,7 @@ const Dashboard = () => {
                           <strong>50%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                          <small className="text-muted">April 10, 2021 - Jul 23, 2021</small>
                         </div>
                       </div>
                       <CProgress className="progress-xs" color="success" value="50" />
@@ -375,14 +375,14 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>Avram Tarasios</div>
+                      <div>MANENGONO GUY</div>
                       <div className="small text-muted">
 
-                        <span>Recurring</span> | Registered: Jan 1, 2015
+                        <span>Recurring</span> | Registered: May 10, 2021
                       </div>
                     </td>
                     <td className="text-center">
-                      <CIcon height={25} name="cif-br" title="br" id="br" />
+                      <CIcon height={25} name="cif-us" title="br" id="br" />
                     </td>
                     <td>
                       <div className="clearfix">
@@ -390,7 +390,7 @@ const Dashboard = () => {
                           <strong>10%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                          <small className="text-muted">May 30, 2021 - Jun 23, 2021</small>
                         </div>
                       </div>
                       <CProgress className="progress-xs" color="info" value="10" />
@@ -411,9 +411,9 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>Quintin Ed</div>
+                      <div>SiMO  Yokam</div>
                       <div className="small text-muted">
-                        <span>New</span> | Registered: Jan 1, 2015
+                        <span>New</span> | Registered: April 2, 2021
                       </div>
                     </td>
                     <td className="text-center">
@@ -425,7 +425,7 @@ const Dashboard = () => {
                           <strong>74%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                          <small className="text-muted">April 11, 2021 - May 10, 2021</small>
                         </div>
                       </div>
                       <CProgress className="progress-xs" color="warning" value="74" />
@@ -435,7 +435,7 @@ const Dashboard = () => {
                     </td>
                     <td>
                       <div className="small text-muted">Last login</div>
-                      <strong>1 hour ago</strong>
+                      <strong>Two month ago</strong>
                     </td>
                   </tr>
                   <tr>
@@ -446,9 +446,9 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>Enéas Kwadwo</div>
+                      <div>MOUNAH cesaire</div>
                       <div className="small text-muted">
-                        <span>New</span> | Registered: Jan 1, 2015
+                        <span>New</span> | Registered: March 20, 2021
                       </div>
                     </td>
                     <td className="text-center">
@@ -460,7 +460,7 @@ const Dashboard = () => {
                           <strong>98%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                          <small className="text-muted">Jun 08, 2021 - Jun 21, 2021</small>
                         </div>
                       </div>
                       <CProgress className="progress-xs" color="danger" value="98" />
@@ -481,9 +481,9 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>Agapetus Tadeáš</div>
+                      <div>LEKANE Orlaine</div>
                       <div className="small text-muted">
-                        <span>New</span> | Registered: Jan 1, 2015
+                        <span>New</span> | Registered: Jan 1, 2020
                       </div>
                     </td>
                     <td className="text-center">
@@ -495,7 +495,7 @@ const Dashboard = () => {
                           <strong>22%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                          <small className="text-muted">Jun 11, 2021 - Jul 10, 2021</small>
                         </div>
                       </div>
                       <CProgress className="progress-xs" color="info" value="22" />
@@ -516,7 +516,7 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>Friderik Dávid</div>
+                      <div>KOM Ronald</div>
                       <div className="small text-muted">
                         <span>New</span> | Registered: Jan 1, 2015
                       </div>
@@ -530,7 +530,7 @@ const Dashboard = () => {
                           <strong>43%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                          <small className="text-muted">Jun 13, 2021 - Jul 18, 2021</small>
                         </div>
                       </div>
                       <CProgress className="progress-xs" color="success" value="43" />
@@ -540,7 +540,7 @@ const Dashboard = () => {
                     </td>
                     <td>
                       <div className="small text-muted">Last login</div>
-                      <strong>Yesterday</strong>
+                      <strong>Last Week</strong>
                     </td>
                   </tr>
                 </tbody>

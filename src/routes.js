@@ -40,6 +40,11 @@ const User = React.lazy(() => import('./views/users/User'));
 const Profil = React.lazy(() => import('./views/user/profil/Profil'));
 const MyServices = React.lazy(() => import('./views/user/services/my_services'));
 const All_Services = React.lazy(() => import('./views/services/all_services'));
+const All_My_Services = React.lazy(() => import('./views/service/all_my_services'));
+const Wiatalk = React.lazy(() => import('./views/user/wiatalk/wia'));
+const Fournisseur_Services = React.lazy(() => import('./views/user/fournisseurs/fournisseur'));
+
+const Fac = React.lazy(() => import('./views/facture/fac'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -85,9 +90,11 @@ const routes = [
 
   { path: '/user/profil', name: 'Mon Profil', component: Profil },
   { path: '/user/services', name: 'Mes services', component: MyServices },
-  { path: '/services', name: 'Tous les services', component: All_Services }
-  /*{ path: '/user', name: 'Mon Profil', component: Profil, exact:true },
-  { path: '/user/profil', name: 'Profil', component: Profil }*/
+  { path: '/services', name: 'Tous les services', component: All_Services },
+  { path: '/service', name: 'Tous Mes services', component: All_My_Services },
+   { path: '/facture', name: 'Ma facture', component: Fac },
+   { path: '/user/wiatalk', name: 'Inscrire wiatalk', component: Wiatalk },
+   { path: '/user/fournisseurs', name: 'Ajout des services par des fournisseurs', component: Fournisseur_Services },
 ];
 
 export default routes;
