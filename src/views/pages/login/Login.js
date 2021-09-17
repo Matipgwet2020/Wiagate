@@ -103,13 +103,13 @@ const Login = () => {
                       </CCol>
                       <CCol xs="6" className="text-right">
                         <CButton color="primary" className="px-5"
-                          onClick={async () => {
+                          /* onClick={async () => {
                             setIsLoading(true)
                               
                             history.push('https://wiagate-frontend-final.herokuapp.com/#/register');
                               
-                          }}
-                        >{/* <Link to="../register"> */}Sign In{/* </Link> */}</CButton>
+                          }} */
+                        > <Link to="../register"> Sign In </Link> </CButton>
                       </CCol>
                     </CRow>
                   </CForm>
