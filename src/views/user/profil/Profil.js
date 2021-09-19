@@ -1,6 +1,6 @@
 import React from 'react';
 
-import picture from "../../../images/orlaine.jpeg"
+import picture from "../../../images/inconnu.jpg"
 import "../../../styles/profil.css"
 import {Tabs, Tab, TabContent} from "react-bootstrap";
 
@@ -17,8 +17,8 @@ const Profil = (props) => {
           <div className="row">
             <div className="col-md-4">
               <div className="pofile-img">
-                <img  class="img" src={picture} alt="pic" style={{width:200, height:200}} />
-                <div class="file btn btn-lg btn-primary">
+               <img  class="img" src={picture} alt="pic" style={{width:200, height:200}} />
+              <div class="file btn btn-lg btn-primary">
                   Change Photo
                   <input type="file" name="file"/>
                 </div>
@@ -27,7 +27,7 @@ const Profil = (props) => {
 
             <div className="col-md-6">
               <div className="profile-head">
-                <h5>Orlaine Lekane</h5>
+                <h5>----{/* Orlaine Lekane */}</h5>
                 <h6>Consommateur de services</h6>
                 <p className="profile-rating mt-3 mb-5">RANKINGS: <span> 1/10 </span></p> 
               </div>
@@ -41,7 +41,7 @@ const Profil = (props) => {
                       <label>Username</label>
                     </div>
                     <div class="col-md-6">
-                      <p>Kshiti123</p>
+                      <p>----{/* Kshiti123 */}</p>
                     </div>
                   </div>
                   <div class="row">
@@ -49,7 +49,7 @@ const Profil = (props) => {
                       <label>Nom</label>
                     </div>
                     <div class="col-md-6">
-                      <p>Kshiti Ghelani</p>
+                      <p>----{/* Kshiti Ghelani */}</p>
                     </div>
                   </div>
                   <div class="row">
@@ -57,7 +57,7 @@ const Profil = (props) => {
                       <label>Email</label>
                     </div>
                     <div class="col-md-6">
-                      <p>kshitighelani@gmail.com</p>
+                      <p>----{/* kshitighelani@gmail.com */}</p>
                     </div>
                   </div>
                   <div class="row">
@@ -65,7 +65,7 @@ const Profil = (props) => {
                       <label>Téléphone</label>
                     </div>
                     <div class="col-md-6">
-                      <p>123 456 7890</p>
+                      <p>----{/* 123 456 7890 */}</p>
                     </div>
                   </div>
                   <div class="row">
@@ -87,7 +87,7 @@ const Profil = (props) => {
                       <label>Experience</label>
                     </div>
                     <div className="col-md-6">
-                      <p>Expert</p>
+                      <p>----{/* Expert */}</p>
                     </div>
                   </div>
                   <div className="row">
@@ -95,7 +95,7 @@ const Profil = (props) => {
                       <label>Hourly Rate</label>
                     </div>
                     <div className="col-md-6">
-                      <p>10$/hr</p>
+                      <p>----{/* 10$/hr */}</p>
                     </div>
                   </div>
                   <div className="row">
@@ -103,7 +103,7 @@ const Profil = (props) => {
                         <label>Total Projects</label>
                       </div>
                       <div class="col-md-6">
-                        <p>230</p>
+                        <p>----{/* 230 */}</p>
                       </div>
                   </div>
                   <div className="row">
@@ -111,7 +111,7 @@ const Profil = (props) => {
                       <label>English Level</label>
                     </div>
                     <div className="col-md-6">
-                      <p>Expert</p>
+                      <p>----{/* Expert */}</p>
                     </div>
                   </div>
                   <div className="row">
@@ -119,7 +119,7 @@ const Profil = (props) => {
                       <label>Availability</label>
                     </div>
                     <div className="col-md-6">
-                      <p>6 months</p>
+                      <p>----{/* 6 months */}</p>
                     </div>
                   </div>
                 </div>
@@ -136,13 +136,13 @@ const Profil = (props) => {
             <div className="col-md-4">
               <div className="profile-work">
                 <p>Work Link</p>
-                <a href ="#link" target="target">Réseaux sociaux</a> <br />
-                <a href ="#link" target="target">Website</a> <br />
-                <a href ="#link" target="target">Réseaux sociaux</a> <br />
+                <a href ="#link" target="target">----{/* Réseaux sociaux */}</a> <br />
+                <a href ="#link" target="target">----{/* Website */}</a> <br />
+                <a href ="#link" target="target">----{/* Réseaux sociaux */}</a> <br />
                 <p>COMPETENCES</p>
-                <a href ="#link" target="target">Réseaux sociaux</a> <br />
-                <a href ="#link" target="target">Website</a> <br />
-                <a href ="#link" target="target">Réseaux sociaux</a> <br />
+                <a href ="#link" target="target">----{/* Réseaux sociaux */}</a> <br />
+                <a href ="#link" target="target">----{/* Website */}</a> <br />
+                <a href ="#link" target="target">----{/* Réseaux sociaux */}</a> <br />
 
               </div>
             </div>

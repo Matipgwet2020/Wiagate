@@ -320,7 +320,7 @@ const Dashboard = () => {
 
               <br />
 
-              <table className="table table-hover table-outline mb-0 d-none d-sm-table">
+{/*               <table className="table table-hover table-outline mb-0 d-none d-sm-table">
                 <thead className="thead-light">
                   <tr>
                     <th className="text-center"><CIcon name="cil-people" /></th>
@@ -340,7 +340,7 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td>
-                      <div>MATIP Marcele</div>
+                      <div>MOI</div>
                       <div className="small text-muted">
                         <span>New</span> | Registered: Feb 22, 2021
                       </div>
@@ -367,7 +367,7 @@ const Dashboard = () => {
                       <strong>10 sec ago</strong>
                     </td>
                   </tr>
-                  <tr>
+                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
                         <img src={'avatars/2.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
@@ -402,7 +402,7 @@ const Dashboard = () => {
                       <div className="small text-muted">Last login</div>
                       <strong>5 minutes ago</strong>
                     </td>
-                  </tr>
+                  </tr> 
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
@@ -544,7 +544,7 @@ const Dashboard = () => {
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> */}
 
             </CCardBody>
           </CCard>
